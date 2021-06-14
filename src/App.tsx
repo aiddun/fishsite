@@ -94,9 +94,7 @@ function App() {
     <div className="bg-blue-600 h-screen overflow-hidden text-white">
       <div className="absolute flex justify-center items-center h-screen w-screen ">
         <div className="">
-          <h1 className="text-center  font-semibold text-5xl">
-            Aidan Dunlap
-          </h1>
+          <h1 className="text-center  font-semibold text-5xl">Aidan Dunlap</h1>
           <div className="flex justify-center pt-1">
             <a
               onClick={() => {
@@ -109,18 +107,24 @@ function App() {
                 return false;
               }}
               href="#"
+              className="cursor-pointer"
             >
               <div>
                 <MailIcon />
               </div>
             </a>
-            <a href="https://linkedin.com/in/aidandunlap">
+            <a
+              href="https://linkedin.com/in/aidandunlap"
+              className="cursor-pointer"
+            >
               <div>
                 <LinkedInIcon />
               </div>
             </a>
           </div>
-          {popup && <p className="text-center text-sm">anti-spam popup opened</p>}
+          {popup && (
+            <p className="text-center text-sm">anti-spam popup opened</p>
+          )}
         </div>
       </div>
       <div className="overflow-hidden">
