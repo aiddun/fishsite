@@ -30,6 +30,7 @@ const Fish = ({ num }: { num: number }) => {
     position.x > 50 ? Direction.LEFT : Direction.RIGHT
   );
 
+  // @ts-ignore 
   useEffect(async () => {
     const sleepTime = Math.random() * 5 * 1000;
     await sleep(sleepTime);
