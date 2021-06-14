@@ -46,7 +46,7 @@ const Fish = ({ num }: { num: number }) => {
 
   return (
     <img
-      src={`/fishes/fish${num}.png`}
+      src={`/fishes/fish${num}.webp`}
       className="absolute w-60 transform-gpu transition-transform ease-in-out "
       style={{
         transform: `translate(${position.x}vw, ${position.y}vh) scale(${direction}, 1)`,
